@@ -29,9 +29,9 @@ var makeNewCat = function(name, favFood, photo) {
   var catsFavFood = catFavFood(favFood);
   var catsPhoto = catPhoto(photo);
 
-  catsFavFood.appendChild(catsPhoto);
-  catsName.appendChild(catsFavFood);
   catUl.appendChild(catsName);
+  catUl.appendChild(catsFavFood);
+  catUl.appendChild(catsPhoto);
 
   var catList = document.querySelector('#cats');
   catList.append(catUl);
